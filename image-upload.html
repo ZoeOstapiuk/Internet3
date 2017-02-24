@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Space explorer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="personal-info.html">Personal information</a></li>
+            <li><a class="active" href="image-upload.html">My special photo</a></li>
+            <li><a href="form-method.html">Form method</a></li>
+            <li><a href="server-program.html">Choose secret program</a></li>
+        </ul>
+        <form method="POST" action="photo.php" class="form container form-card col-md-7 col-sm-offset-4">
+            <fieldset>
+                <legend>Upload your photo</legend>
+                <div class="row">
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img id="blah">
+                        </a>
+                    </div>
+                </div>
+                <p><input type="file" name="photo" accept="image/png,image/jpeg" onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])">
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Space explorer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js'></script>
+        <script type='text/javascript' src='home-page-jquery.js'></script>
+    </head>
+    <body>
+    <ul class="nav">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="personal-info.html">Personal information</a></li>
+        <li><a href="image-upload.html">My special photo</a></li>
+        <li><a href="form-method.html">Form method</a></li>
+        <li><a href="server-program.html">Choose secret program</a></li>
+    </ul>
+    <div class="form-card col-md-5 col-md-offset-4 clear row">
+        <button class="btn btn-danger pull-right" id="toggle-btn"><span class="glyphicon glyphicon-remove"></span></button>
+        <label id="stat">Hi!</label>
+    </div>
+    <div id="container">
+    <div class="form-card col-md-5 col-md-offset-4 clear row">
+        <div class="col-md-9">
+            <input type="text" id="star-name" class="form-control col-md-9" placeholder="Enter new star's name">
+        </div>
+        <button class="col-md-3 btn btn-primary pull-right" id="add-btn">Add new star</button>
+    </div>
+    <div class="form-card col-md-5 col-md-offset-4 clear">
+        <ul id="star-list" class="list-group">
+            <li class="list-group-item"><span class="glyphicon glyphicon-edit"></span>Nice star #1<span class="glyphicon glyphicon-remove pull-right"></span></li>
+        </ul>
+    </div>
+    </div>
+    </body>
+</html>

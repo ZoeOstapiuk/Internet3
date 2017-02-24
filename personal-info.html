@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Space explorer</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    </head>
+    <body>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="personal-info.html">Personal information</a></li>
+            <li><a href="image-upload.html">My special photo</a></li>
+            <li><a href="form-method.html">Form method</a></li>
+            <li><a href="server-program.html">Choose secret program</a></li>
+        </ul>
+        <form action="personal-info-page.php" method="POST" class="form container form-card col-md-7 col-sm-offset-4">
+            <fieldset>
+                <legend>Personal information:</legend>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Enter name">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" name="pwd" id="pwd" placeholder="Enter password">
+                </div>
+                <label for="select-class">Choose your level of travel experience:</label>
+                <select class="form-control" name="select-class" id="select-class">
+                    <option value="professional">Professional</option>
+                    <option value="advanced">Advanced</option>
+                    <option value="amateur">Amateur</option>
+                    <option value="newbee">Newbee</option>
+                </select>
+            </fieldset>
+            <button type="submit" class="btn btn-primary" style="margin-top: 15px">Submit</button>
+        </form>
+    </body>
+</html>
